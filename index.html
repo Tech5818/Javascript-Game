@@ -3,18 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/font.css" />
     <link rel="stylesheet" href="./css/background.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Rocket Game</title>
+    <script src="./script/index.js" defer></script>
+    <script src="./script/start.js" defer></script>
   </head>
   <body>
     <div class="gameArea"></div>
-    <div id="rocket"></div>
-    <div class="info_box">
-      <p id="score">score: 0</p>
-      <div class="history_list">
-        <p class="history_title">history</p>
+    <div class="play_wrap" id="play">
+      <div id="rocket"></div>
+      <div class="info_box">
+        <p id="score">score: 0</p>
+        <div class="history_list">
+          <p class="history_title">history</p>
+        </div>
       </div>
+    </div>
+    <div class="start" id="start">
+      <p class="start_title">
+        FIRE <span class="start_title_highlight">ROCKET</span>
+      </p>
+      <p class="start_message">PRESS SPACEBAR.</p>
     </div>
   </body>
 </html>

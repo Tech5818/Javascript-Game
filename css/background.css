@@ -87,7 +87,7 @@ body {
 }
 
 #rocket {
-  z-index: 9999;
+  z-index: 99;
   position: absolute;
   width: 150px;
   height: 250px;
