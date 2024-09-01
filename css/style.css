@@ -9,6 +9,10 @@
   text-decoration: none;
 }
 
+body {
+  overflow: hidden;
+}
+
 .info_box {
   width: 100%;
   position: relative;

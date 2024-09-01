@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>Rocket Game</title>
     <script src="./script/index.js" defer></script>
-    <!-- <script src="./script/start.js" defer></script> -->
+    <script src="./script/start.js" defer></script>
   </head>
   <body>
     <div class="gameArea"></div>
@@ -21,12 +21,12 @@
         </div>
         <div class="status">
           <div class="fuel">
-            <p class="fuel_text">FULE:&nbsp;</p>
+            <p class="fuel_text">FULE:</p>
             <div class="fuel_bar">
               <div class="fuel_line"></div>
               <div class="fuel_line"></div>
               <div class="fuel_line"></div>
-              <div class="fuel_shown">
+              <div class="fuel_shown" id="fuel">
                 <div class="fuel_status"></div>
               </div>
             </div>
@@ -34,11 +34,11 @@
         </div>
       </div>
     </div>
-    <!-- <div class="start" id="start">
+    <div class="start" id="start">
       <p class="start_title">
         FIRE <span class="start_title_highlight">ROCKET</span>
       </p>
       <p class="start_message">PRESS SPACEBAR.</p>
-    </div> -->
+    </div>
   </body>
 </html>

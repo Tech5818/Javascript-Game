@@ -95,5 +95,5 @@ body {
   bottom: 10%;
   background-image: url(../img/rocket.png);
   background-size: cover;
-  transition: bottom 0.1s;
+  transition: 0.1s;
 }
