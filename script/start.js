@@ -5,14 +5,14 @@
  * play화면이 보임
  */
 
-// const startScreen = document.getElementById("start");
+const startScreen = document.getElementById("start");
 
-// window.addEventListener("keydown", (e) => {
-//   if (e.key === " ") {
-//     startScreen.style.opacity = 0;
+window.addEventListener("keydown", (e) => {
+  if (e.key === " ") {
+    startScreen.style.opacity = 0;
 
-//     setTimeout(() => {
-//       startScreen.style.display = "none";
-//     }, 1000);
-//   }
-// });
+    setTimeout(() => {
+      startScreen.style.display = "none";
+    }, 1000);
+  }
+});

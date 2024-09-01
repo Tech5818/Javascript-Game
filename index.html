@@ -8,16 +8,29 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>Rocket Game</title>
     <script src="./script/index.js" defer></script>
-    <script src="./script/start.js" defer></script>
+    <!-- <script src="./script/start.js" defer></script> -->
   </head>
   <body>
     <div class="gameArea"></div>
     <div class="play_wrap" id="play">
       <div id="rocket"></div>
       <div class="info_box">
-        <p id="score">score: 0</p>
+        <p id="score">SCORE: 0</p>
         <div class="history_list">
           <p class="history_title">history</p>
+        </div>
+        <div class="status">
+          <div class="fuel">
+            <p class="fuel_text">FULE:&nbsp;</p>
+            <div class="fuel_bar">
+              <div class="fuel_line"></div>
+              <div class="fuel_line"></div>
+              <div class="fuel_line"></div>
+              <div class="fuel_shown">
+                <div class="fuel_status"></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
