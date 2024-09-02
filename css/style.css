@@ -33,12 +33,25 @@ body {
 .history_list {
   position: absolute;
   right: 20px;
-}
+  top: 20px;
+  display: flex;
+  flex-flow: column;
+  gap: 5px;
+  align-items: center;
 
-.history_title {
-  color: #fff;
-  font-size: 28px;
-  font-family: "Galmuri11";
+  > p {
+    font-family: "Galmuri11";
+    color: #fff;
+  }
+
+  > .history_title {
+    font-size: 28px;
+  }
+
+  > .top_score,
+  .last_score {
+    font-size: 25px;
+  }
 }
 
 .start {
@@ -144,6 +157,86 @@ body {
         &:nth-child(3) {
           left: 75%;
         }
+      }
+    }
+  }
+}
+
+.gameover {
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translate(50%, -50%);
+  display: none;
+  z-index: 1000;
+  flex-flow: column;
+  align-items: center;
+  gap: 80px;
+  padding-bottom: 100px;
+
+  & p {
+    font-family: "Galmuri11";
+    color: #fff;
+  }
+
+  > .gameover_title {
+    font-size: 100px;
+    /* margin-bottom: 100px; */
+  }
+
+  > .gameover_message {
+    font-size: 60px;
+  }
+
+  > .record_box {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 30px;
+
+    > .record {
+      font-size: 50px;
+    }
+    > .write_record {
+      display: flex;
+
+      > .record_input {
+        border: 4px solid #fff;
+        background: transparent;
+        border-radius: 10px;
+        font-family: "Galmuri11";
+        padding: 8px 16px;
+        font-size: 40px;
+        color: #fff;
+
+        &:focus {
+          outline: none;
+        }
+
+        &::placeholder {
+          color: #fff;
+        }
+      }
+    }
+
+    > .retry_record {
+      display: flex;
+      gap: 100px;
+      > p {
+        font-size: 45px;
+        cursor: pointer;
+
+        &:hover {
+          font-weight: 600;
+        }
+      }
+
+      > .retry {
+        color: rgb(48, 255, 48);
+      }
+
+      > .record {
+        color: red;
       }
     }
   }

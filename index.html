@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>Rocket Game</title>
     <script src="./script/index.js" defer></script>
-    <script src="./script/start.js" defer></script>
   </head>
   <body>
     <div class="gameArea"></div>
@@ -18,6 +17,8 @@
         <p id="score">SCORE: 0</p>
         <div class="history_list">
           <p class="history_title">history</p>
+          <p class="top_score" id="top_score">top record: 0</p>
+          <p class="last_score" id="last_score">last record: 0</p>
         </div>
         <div class="status">
           <div class="fuel">
@@ -39,6 +40,18 @@
         FIRE <span class="start_title_highlight">ROCKET</span>
       </p>
       <p class="start_message">PRESS SPACEBAR.</p>
+    </div>
+
+    <div class="gameover" id="gameover">
+      <p class="gameover_title">Game Over!</p>
+      <p class="gameover_message" id="gameover_message">연료가 떨어졌습니다!</p>
+      <div class="record_box">
+        <p class="record" id="record">record: 1000</p>
+
+        <div class="retry_record">
+          <p class="retry" id="retry_btn">Retry</p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
